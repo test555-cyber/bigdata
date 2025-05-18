@@ -6,10 +6,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 class Config:
     # OSS配置
-    OSS_ACCESS_KEY = os.getenv('OSS_ACCESS_KEY', 'your_access_key')
-    OSS_SECRET_KEY = os.getenv('OSS_SECRET_KEY', 'your_secret_key')
-    OSS_ENDPOINT = 'https://oss-cn-beijing.aliyuncs.com'
-    OSS_BUCKET = 'ecommerce-price-data'
+    OSS_ACCESS_KEY = os.getenv('OSS_ACCESS_KEY', '**')
+    OSS_SECRET_KEY = os.getenv('OSS_SECRET_KEY', '**')
+    OSS_ENDPOINT = 'https://oss-cn-hangzhou.aliyuncs.com'
+    OSS_BUCKET = 'maiyadexiangqi'
 
     # ClickHouse配置
     CH_HOST = os.getenv('CLICKHOUSE_HOST', 'localhost')
